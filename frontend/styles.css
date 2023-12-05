@@ -1,0 +1,56 @@
+/* Light Mode */
+:root {
+  --black: #1A1A1A;
+  --White: #FFFFFF;
+  --paragraph-black: #292D32;
+  --input-bg: #F7F7F8;
+  --spendec-purple: #7326F1;
+
+  --font-family-base: "inter", Helvetica, Arial, sans-serif;
+
+  --font-size-xx-small: 12px;
+  --font-size-x-small: 13px;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 24px;
+  --font-size-x-large: 32px;
+  --font-size-xx-large: 40px;
+}
+
+/* Dark Mode */
+.signup-body.dark-mode {
+    --black: #FFFFFF;
+  --White: #1A1A1A;
+  --paragraph-black: #FFFFFF;
+}
+
+
+
+.signup-body {
+    font-family: var(--font-family-base);
+    background-color: var(--White);
+}
+
+.header {
+    box-shadow: 0px 4px 4px 0px rgba(115, 38, 241, 0.1);
+}
+
+.black-text {
+    color: var(--black);
+}
+
+.p-text {
+    color: var(--paragraph-black);
+}
+
+.input-bg {
+    background-color: var(--input-bg);
+}
+
+.purple-bg {
+    background-color: var(--spendec-purple);
+}
+
+.purple-text {
+    color: var(--spendec-purple);
+}
