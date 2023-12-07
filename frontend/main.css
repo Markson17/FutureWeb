@@ -1,0 +1,28 @@
+/* Dashhbord css */
+
+.dashboard-body {
+    background: #FAFAFB;
+}
+
+.shadow-md {
+    height: 88px;
+}
+
+.money-in-image {
+    background: #f1fff1;
+} 
+
+.money-out-image {
+    background: #fff4f0;
+}
+
+.custom-hover:hover path {
+    stroke: #ffffff;
+    transition: all 300ms ease-in-out;
+}
+
+.selected, .selected path{
+    background: var(--spendec-purple);
+    color: #ffffff;
+    stroke: #ffffff;
+}
