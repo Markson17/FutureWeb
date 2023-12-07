@@ -10,7 +10,7 @@
 - [Roadmap](https://github.com/Markson17/FutureWeb#roadmap)
 
 ## Introduction
-Welcome to Spendec, a revolutionary Web5 expense tracker app that empowers users with control over their financial data while providing comprehensive insights and personalized guidance. This project is developed as part of the DevCareer Web5 Hackathon by team FutureWeb and represents our vision for the future of decentralized financial management.
+Welcome to Spendec, a revolutionary Web5 expense tracker app that empowers users with control over their financial data while providing comprehensive insights and personalized guidance. This project is developed as part of the [DevCareer Web5 Hackathon] (https://devcareer.io/programs/web5) by team FutureWeb and represents our vision for the future of decentralized financial management.
 
 ## Problem Statement
 Traditional expense tracking apps often compromise user control over financial data, relying on centralized servers and lacking comprehensive insights. Spendec addresses these issues by leveraging Web5 technologies to ensure user ownership, privacy, and advanced financial features.
