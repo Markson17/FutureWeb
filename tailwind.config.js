@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./dist/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        spendecPurple: '#7326F1',
+      },
+    },
   },
   plugins: [],
 }
