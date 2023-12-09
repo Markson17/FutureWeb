@@ -16,7 +16,6 @@ const getStartedBtn = document.querySelectorAll('.get-started');
 
 getStartedBtn.forEach(function(getStartedBtn) {
     getStartedBtn.addEventListener('click', function() {
-        window.location.href = "./frontend/signup.html";
+        window.location.href = "frontend/onboarding1.html";
     });
 });
-
