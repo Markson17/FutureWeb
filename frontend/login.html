@@ -26,39 +26,28 @@
     <main class="mb-12 flex md:flex-row flex-col w-full flex-1">
         <section class="signup-bg flex-1">
             <div class="flex flex-col items-center justify-center md:max-w-lg mx-auto my-auto py-24">
-                <img src="images/image 41.svg" alt="First 2FA image" class="md:mb-10 mb-5">
-                <h1 class="black-text font-black text-2xl text-center md:mb-3 mb-2.5">The surest way to save and be
-                    saved.</h1>
-                <p class="black-text text-center">Set goals, Save Smarter, Spend Wiser.</p>
+                <img src="images/image 43.svg" alt="First 2FA image" class="md:mb-10 mb-5">
+                <h1 class="black-text font-black text-2xl text-center md:mb-3 mb-2.5">Welcome</h1>
+                <p class="black-text text-center">we’re happy to see you again.</p>
             </div>
         </section>
         <section
             class="flex-1 max-w-xl flex justify-center flex-col md:mb-10 mb-12 signupForm-border md:mr-20 mx-5 p-5">
-            <form method="POST" id="registrationForm" class="flex flex-col max-w-md md:mx-auto mx-4">
-                <h2 class="black-text font-black text-xl font-bold mb-8">What would you like us to call you?</h2>
-                <label for="name" class="p-text pb-0.5">Name</label>
-                <input type="text" name="name" id="name" autocomplete="name" class="rounded-lg register-input py-1.5 px-2.5">
-                <button onclick="registerUser(event)" class="text-white rounded-lg py-2.5 px-4 register-btn mt-8 mb-4">Register</button>
-                <p class="black-text">Already have an account? <a href="login.html" class="purple-text">Log in</a></p>
+            <form class="flex flex-col max-w-md md:mx-auto mx-4">
+                <h2 class="black-text font-black text-xl font-bold mb-8">Log in</h2>
+                <label for="userid" class="p-text">User ID</label>
+                <p class="pb-0.5 font-xx-small font-light p-text">A user ID is like a username, it is unique to every individual.</p>
+                <div class="input-container rounded-lg register-input py-1.5 px-2.5 flex w-full">
+                    <input type="text" name="userid" class=" bg-transparent w-9/12 outline-none">
+                    <button class="btn-inside-input text-white rounded purple-bg whitespace-nowrap">Connect DID</button>
+                </div>
+                <button class="text-white rounded-lg py-2.5 px-4 register-btn mt-8 mb-4">Log in</button>
+                <p class="black-text">Don’t have an account? <a href="signup1.html" class="purple-text">Register</a></p>
             </form>
         </section>
     </main>
 
     <script src="nav.js"></script>
-    <script>
-        function registerUser(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-
-    console.log("Registering user...");
-    var userName = document.getElementById("name").value;
-    localStorage.setItem("userName", userName);
-
-    console.log("Redirecting to signup2.html...");
-    window.location.href = "signup2.html";
-}
-
-    </script>
-    
 </body>
 
 </html>

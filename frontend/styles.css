@@ -7,13 +7,7 @@
 
     --font-family-base: "inter", Helvetica, Arial, sans-serif;
 
-    --font-size-xx-small: 12px;
-    --font-size-x-small: 13px;
-    --font-size-small: 14px;
-    --font-size-medium: 16px;
-    --font-size-large: 24px;
-    --font-size-x-large: 32px;
-    --font-size-xx-large: 40px;
+    --font-size-xx-small: 8px;
 }
 
 
@@ -163,6 +157,10 @@ button:hover {
 .btn-inside-input {
     padding: 8px 14px 8px 13px;
     display: inline-flex;
+}
+
+.font-xx-small {
+    font-size: var(--font-size-xx-small);
 }
 
 @media screen and (max-width: 800px) {
