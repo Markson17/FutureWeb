@@ -1,43 +1,31 @@
-// Button Navigation
-document.addEventListener('DOMContentLoaded', function () {
-    const FirstNextBtn = document.querySelector('.firstNext-onboarding');
-    const secondNextBtn = document.querySelector('.secondNext-onboarding');
-    const landingBtn = document.querySelector('.landing');
-    const getstartedBtn = document.querySelector('.getStarted');
-    const signupBtn = document.querySelector('.signup1');
+// Function to show a specific step
+function showStep(step) {
+    const currentStep = document.querySelector('.onboarding:not(.hidden)');
+    const nextStep = document.getElementById('step' + step);
 
-    // Check if FirstNextBtn exists and add event listener
-    if (FirstNextBtn) {
-        FirstNextBtn.addEventListener('click', function () {
-            window.location.href = "onboarding2.html";
-        });
+    if (currentStep && nextStep) {
+        currentStep.classList.add('hidden');
+        nextStep.classList.remove('hidden');
     }
+}
 
-    // Check if seondNextBtn exists and add event listener
-    if (secondNextBtn) {
-        secondNextBtn.addEventListener('click', function () {
-            window.location.href = "onboarding3.html";
-        });
-    }
+// Function to handle going to the next step
+function nextStep() {
+    const currentStepNumber = parseInt(document.querySelector('.onboarding:not(.hidden)').id.replace('step', ''), 10);
+    const nextStepNumber = currentStepNumber + 1;
 
-    // Check if getstartedBtn exists and add event listener
-    if (getstartedBtn) {
-        getstartedBtn.addEventListener('click', function () {
-            window.location.href = "onboarding1.html";
-        });
-    }
+    showStep(nextStepNumber);
+}
 
-    // Check if signupBtn exists and add event listener
-    if (signupBtn) {
-        signupBtn.addEventListener('click', function () {
-            window.location.href = "signup1.html";
-        });
-    }
+// Function to handle going to the previous step
+function prevStep() {
+    const currentStepNumber = parseInt(document.querySelector('.onboarding:not(.hidden)').id.replace('step', ''), 10);
+    const prevStepNumber = currentStepNumber - 1;
 
-    // Check if landingBtn exists and add event listener
-    if (landingBtn) {
-        landingBtn.addEventListener('click', function () {
-            window.location.href = "../index.html";
-        });
-    }
+    showStep(prevStepNumber);
+}
+
+// Event listener for the "Proceed" button
+document.querySelector('.signup').addEventListener('click', function () {
+    window.location.href = "signup.html";
 });

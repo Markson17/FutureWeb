@@ -32,33 +32,40 @@
                 <p class="black-text text-center">Set goals, Save Smarter, Spend Wiser.</p>
             </div>
         </section>
-        <section
+        <section id="registerSection"
             class="flex-1 max-w-xl flex justify-center flex-col md:mb-10 mb-12 signupForm-border md:mr-20 mx-5 p-5">
-            <form method="POST" id="registrationForm" class="flex flex-col max-w-md md:mx-auto mx-4">
+            <form id="registrationForm" class="flex flex-col max-w-md md:mx-auto mx-4">
                 <h2 class="black-text font-black text-xl font-bold mb-8">What would you like us to call you?</h2>
                 <label for="name" class="p-text pb-0.5">Name</label>
-                <input type="text" name="name" id="name" autocomplete="name" class="rounded-lg register-input py-1.5 px-2.5">
-                <button onclick="registerUser(event)" class="text-white rounded-lg py-2.5 px-4 register-btn mt-8 mb-4">Register</button>
+                <input type="text" name="name" id="name" required autocomplete="name"
+                    class="rounded-lg register-input py-1.5 px-2.5">
+                <button type="button" onclick="showWalletSection()"
+                    class="text-white rounded-lg py-2.5 px-4 register-btn mt-8 mb-4">Register</button>
+                <p class="black-text">Already have an account? <a href="login.html" class="purple-text">Log in</a></p>
+            </form>
+        </section>
+        <section id="walletSection"
+            class="hidden flex-1 max-w-xl flex justify-center flex-col md:mb-10 mb-12 signupForm-border md:mr-20 mx-5 p-5">
+            <form id="walletForm" class="flex flex-col max-w-md md:mx-auto mx-4">
+                <h2 class="black-text font-black text-xl font-bold mb-8">Create a wallet</h2>
+                <label for="userid" class="p-text">User ID</label>
+                <p class="pb-0.5 font-xx-small font-light p-text">A user ID is like a username, it is unique to every
+                    individual.</p>
+                <input type="text" name="userid" class="rounded-lg register-input py-3.5 px-2.5" required>
+                <label for="token" class="p-text pb-0.5">Token</label>
+                <div class="input-container rounded-lg register-input py-1.5 px-2.5 flex w-full">
+                    <input type="text" name="token" class=" bg-transparent w-9/12 outline-none" required>
+                    <button class="btn-inside-input text-white rounded purple-bg whitespace-nowrap">Generate
+                        token</button>
+                </div>
+                <button type="button"
+                    class="text-white rounded-lg py-2.5 px-4 register-btn mt-8 mb-4">Register</button>
                 <p class="black-text">Already have an account? <a href="login.html" class="purple-text">Log in</a></p>
             </form>
         </section>
     </main>
 
-    <script src="nav.js"></script>
-    <script>
-        function registerUser(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-
-    console.log("Registering user...");
-    var userName = document.getElementById("name").value;
-    localStorage.setItem("userName", userName);
-
-    console.log("Redirecting to signup2.html...");
-    window.location.href = "signup2.html";
-}
-
-    </script>
-    
+    <script src="register.js"></script> 
 </body>
 
 </html>
