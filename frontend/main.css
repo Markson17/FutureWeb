@@ -6,6 +6,9 @@
     --paragraph-black: #292D32;
     --input-bg: #F7F7F8;
     --spendec-purple: #7326F1;
+    --dashboard-bg: #FAFAFB;
+    --green-bg: #f1fff1;
+    --red-bg: #fff4f0;
   
     --font-family-base: "inter", Helvetica, Arial, sans-serif;
   
@@ -19,16 +22,16 @@
 }
 
   .dashboard-body {
-    background: #FAFAFB;
-    font-family: var(--black);
+    background: var(--dashboard-bg);
+    font-family: var(--font-family-base);
   }
 
   .money-in-image {
-    background: #f1fff1;
+    background: var(--green-bg);
   } 
 
   .money-out-image {
-    background: #fff4f0;
+    background: var(--red-bg);
   }
 
   .menu-link:hover {
@@ -36,30 +39,18 @@
   }
 
   .menu-link:hover path {
-    stroke: #ffffff;
+    stroke: var(--White);
     transition: all 300ms ease-in-out;
   }
 
   .selected, .selected path{
     background: var(--spendec-purple);
-    color: #ffffff;
-    stroke: #ffffff;
-  }
-
-  button.purple-bg {
-    padding: 10px 16px;
-    border: 1px solid var(--spendec-purple);
-    border-radius: 8px;
-    width: 132px;
-    opacity: 1;
+    color: var(--White);
+    stroke: var(--White);
   }
 
   button:hover {
     opacity: 0.9;
-  }
-
-  .purple-bg {
-    background: var(--spendec-purple);
   }
 
   .sidebar-expanded {
@@ -86,30 +77,18 @@
       height: 60px;
     }
 
-    .sidebar {
-      width: 80px;
-    }
-
-    .main-content {
-      margin-left: 80px;
-    }
-
     .menu-text {
       display: none;
     }
 
     .menu-link svg {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
     }
 
     .user-aside {
       flex-direction: column;
       text-align: center;
-    }
-
-    .menu-list {
-      padding: 0px;
     }
     
     .menu-link{
@@ -156,12 +135,5 @@
     .content-expanded {
       margin-left: 0px;
       z-index: 1;
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    .main-content-header {
-      flex-direction: column;
-      gap: 10px;
     }
   }

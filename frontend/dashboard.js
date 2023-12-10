@@ -1,18 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const sidebar = document.getElementById('sidebar');
-    const hamburgerBtn = document.getElementById('hamburgerBtn');
-    const closeBtn = document.getElementById('closeBtn');
     const mainContent = document.querySelector('.main-content');
-
-    hamburgerBtn.addEventListener('click', function (event) {
-        event.stopPropagation();
-        toggleSidebar();
-    });
-
-    closeBtn.addEventListener('click', function (event) {
-        event.stopPropagation();
-        toggleSidebar();
-    });
     
     document.addEventListener('click', function (event) {
         const isClickInsideSidebar = sidebar.contains(event.target);
